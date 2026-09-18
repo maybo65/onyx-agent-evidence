@@ -1,0 +1,9 @@
+{
+ "intended_change": "attach onyx.integrations.read to onyx.restricted_admin_gate_test (clone) only",
+ "clone_delta": [
+  "onyx.integrations.read"
+ ],
+ "clone_removed": [],
+ "shared_restricted_admin_drifted": false,
+ "only_intended_change_landed": true
+}
