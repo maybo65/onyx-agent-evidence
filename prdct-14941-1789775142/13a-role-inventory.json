@@ -1,0 +1,209 @@
+{
+ "environment": "auth.dev.onyx.security (Frontegg dev environment the Tilt stack authenticates against)",
+ "read_at": "2026-09-18",
+ "read_by": "setup (PRDCT-14941) via GET /identity/resources/roles/v1 + /permissions/v1 with vendor token",
+ "summary": {
+  "roles_with_literal": [
+   "Admin",
+   "onyx.member",
+   "onyx.restricted_admin",
+   "onyx.viewer",
+   "onyx.admin"
+  ],
+  "roles_with_covering_wildcard_only": []
+ },
+ "roles": [
+  {
+   "id": "04ae30e3-33b4-48ad-a958-e24accf462ae",
+   "key": "Admin",
+   "name": "Admin",
+   "tenantId": null,
+   "permission_keys": [
+    "fe.account-settings.read.app",
+    "fe.connectivity.*",
+    "fe.secure.*",
+    "onyx.alert_files.download",
+    "onyx.anonymized_data.read",
+    "onyx.config.read",
+    "onyx.config.write",
+    "onyx.credentials.read",
+    "onyx.credentials.write",
+    "onyx.delete",
+    "onyx.extension.config.read",
+    "onyx.extension.event.write",
+    "onyx.integrations.read",
+    "onyx.integrations.write",
+    "onyx.read",
+    "onyx.sensitive_data.read",
+    "onyx.sessions.read",
+    "onyx.write"
+   ],
+   "literal_onyx.integrations.read": true,
+   "covering_wildcard": []
+  },
+  {
+   "id": "29d640cf-d9ea-417f-9279-b259abb7f32b",
+   "key": "onyx.editor",
+   "name": "OnyxAppEditor",
+   "tenantId": null,
+   "permission_keys": [
+    "onyx.anonymized_data.read",
+    "onyx.read",
+    "onyx.sensitive_data.read",
+    "onyx.write"
+   ],
+   "literal_onyx.integrations.read": false,
+   "covering_wildcard": []
+  },
+  {
+   "id": "35b586ca-b309-4a48-a444-b6a6d55368e2",
+   "key": "onyx.member",
+   "name": "Member",
+   "tenantId": null,
+   "permission_keys": [
+    "onyx.anonymized_data.read",
+    "onyx.config.read",
+    "onyx.config.write",
+    "onyx.credentials.read",
+    "onyx.credentials.write",
+    "onyx.delete",
+    "onyx.extension.config.read",
+    "onyx.extension.event.write",
+    "onyx.integrations.read",
+    "onyx.integrations.write",
+    "onyx.read",
+    "onyx.sensitive_data.read",
+    "onyx.sessions.read",
+    "onyx.write"
+   ],
+   "literal_onyx.integrations.read": true,
+   "covering_wildcard": []
+  },
+  {
+   "id": "36960855-202e-425a-8e4d-e9d343dbbb9c",
+   "key": "onyx.restricted_admin",
+   "name": "Restricted Admin",
+   "tenantId": null,
+   "permission_keys": [
+    "fe.account-settings.read.app",
+    "fe.connectivity.*",
+    "fe.secure.*",
+    "onyx.anonymized_data.read",
+    "onyx.config.read",
+    "onyx.config.write",
+    "onyx.credentials.read",
+    "onyx.credentials.write",
+    "onyx.delete",
+    "onyx.extension.config.read",
+    "onyx.extension.event.write",
+    "onyx.integrations.read",
+    "onyx.integrations.write",
+    "onyx.read",
+    "onyx.sessions.read",
+    "onyx.write"
+   ],
+   "literal_onyx.integrations.read": true,
+   "covering_wildcard": []
+  },
+  {
+   "id": "6fb87fe3-6c52-4d4e-9b4b-83db4db9015b",
+   "key": "onyx.viewer",
+   "name": "Viewer",
+   "tenantId": null,
+   "permission_keys": [
+    "fe.connectivity.read.*",
+    "fe.secure.read.*",
+    "onyx.integrations.read",
+    "onyx.prompts.read",
+    "onyx.read",
+    "onyx.sensitive_data.read"
+   ],
+   "literal_onyx.integrations.read": true,
+   "covering_wildcard": []
+  },
+  {
+   "id": "a69fffbc-3e1a-4a0b-81e7-e3396eccb890",
+   "key": "onyx.conversation_revealer",
+   "name": "Conversation Revealer",
+   "tenantId": null,
+   "permission_keys": [
+    "onyx.conversation.reveal"
+   ],
+   "literal_onyx.integrations.read": false,
+   "covering_wildcard": []
+  },
+  {
+   "id": "bcf52fda-093b-4913-b981-a4b8979f5f3e",
+   "key": "onyx.admin",
+   "name": "OnyxAppAdmin",
+   "tenantId": null,
+   "permission_keys": [
+    "onyx.anonymized_data.read",
+    "onyx.config.read",
+    "onyx.config.write",
+    "onyx.credentials.read",
+    "onyx.credentials.write",
+    "onyx.delete",
+    "onyx.extension.config.read",
+    "onyx.extension.event.write",
+    "onyx.integrations.read",
+    "onyx.integrations.write",
+    "onyx.prompts.read",
+    "onyx.read",
+    "onyx.sensitive_data.read",
+    "onyx.sessions.read",
+    "onyx.write"
+   ],
+   "literal_onyx.integrations.read": true,
+   "covering_wildcard": []
+  },
+  {
+   "id": "cae79d41-c4ba-42a3-ba12-83f25ba7aced",
+   "key": "onyx.executive_viewer",
+   "name": "Executive Viewer",
+   "tenantId": null,
+   "permission_keys": [
+    "onyx.sensitive_data.read"
+   ],
+   "literal_onyx.integrations.read": false,
+   "covering_wildcard": []
+  },
+  {
+   "id": "cbfdeed7-7e79-4d1e-b6c8-7d9c78aee7f5",
+   "key": "onyx.runtime_editor",
+   "name": "Runtime Editor",
+   "tenantId": null,
+   "permission_keys": [
+    "onyx.ignore_rules.write",
+    "onyx.runtime.write"
+   ],
+   "literal_onyx.integrations.read": false,
+   "covering_wildcard": []
+  },
+  {
+   "id": "ead0d4d2-fc81-4674-b24a-4b22623d7b03",
+   "key": "onyx.restricted_viewer",
+   "name": "OnyxAppRestrictedViewer",
+   "tenantId": null,
+   "permission_keys": [
+    "onyx.anonymized_data.read"
+   ],
+   "literal_onyx.integrations.read": false,
+   "covering_wildcard": []
+  },
+  {
+   "id": "fb4d692a-79ce-48a2-8022-94a5a133c507",
+   "key": "ReadOnly",
+   "name": "Read Only",
+   "tenantId": null,
+   "permission_keys": [
+    "fe.connectivity.read.*",
+    "fe.secure.read.*",
+    "onyx.anonymized_data.read",
+    "onyx.sensitive_data.read"
+   ],
+   "literal_onyx.integrations.read": false,
+   "covering_wildcard": []
+  }
+ ]
+}
