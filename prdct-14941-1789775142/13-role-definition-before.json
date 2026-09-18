@@ -1,0 +1,52 @@
+{
+ "note": "Restricted Admin role definition BEFORE any edit by this run (branch selection read; role-definition API, never console display)",
+ "role": {
+  "id": "36960855-202e-425a-8e4d-e9d343dbbb9c",
+  "vendorId": "c7333915-d027-4763-92f7-7c17d2a11030",
+  "tenantId": null,
+  "key": "onyx.restricted_admin",
+  "name": "Restricted Admin",
+  "description": "Test for restricted admin role; able to do everything except talk to Guardian Agent and view sensitive data",
+  "isDefault": false,
+  "firstUserRole": false,
+  "createdAt": "2026-01-04T12:36:28.000Z",
+  "updatedAt": "2026-01-04T12:36:28.000Z",
+  "permissions": [
+   "e71637aa-308c-421b-98c5-ed93ee41d3aa",
+   "1afe76dc-889b-4a83-b0bb-784d639e9fc8",
+   "60c28444-cbb2-4f3e-8162-f63d0b2f2ca1",
+   "e2ee8254-0ffe-45fc-87b0-faba5aa06c73",
+   "da015508-7cb1-4dcd-9436-d0518a2ecd21",
+   "5ba66bf7-21de-4e04-9167-fd9b5a2eb51e",
+   "6623be3f-8732-4900-84bc-9e3f7e838c01",
+   "d8a55f3b-2207-4e5b-beed-6e783eee31e4",
+   "4c3a6fb9-feeb-40e8-abf9-87ab50951bf4",
+   "4fc0439f-034b-4937-b40b-e9ec583d1425",
+   "1e01d7fd-fba1-40a9-82e2-1cd81015d763",
+   "17ccc603-0085-4b01-96e9-49da4cfdec3d",
+   "c4ababf0-fd34-4343-a884-1e00e3bc0f77",
+   "0e8c0103-feb1-4ae0-8230-00de5fd0f857",
+   "bc29a267-e6ee-4216-afde-dd0ba2ebc8b1",
+   "502b112e-50fd-4e8d-875e-3abda628d94a"
+  ],
+  "level": 0,
+  "permission_keys": [
+   "fe.account-settings.read.app",
+   "fe.connectivity.*",
+   "fe.secure.*",
+   "onyx.anonymized_data.read",
+   "onyx.config.read",
+   "onyx.config.write",
+   "onyx.credentials.read",
+   "onyx.credentials.write",
+   "onyx.delete",
+   "onyx.extension.config.read",
+   "onyx.extension.event.write",
+   "onyx.integrations.read",
+   "onyx.integrations.write",
+   "onyx.read",
+   "onyx.sessions.read",
+   "onyx.write"
+  ]
+ }
+}
