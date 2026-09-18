@@ -1,0 +1,60 @@
+{
+ "note": "at6 final reconciliation read-back. Shared Restricted Admin role: undrifted (identical permission set before/after this run). Run-created clone role: reconciled (now carries onyx.integrations.read, +1 permission vs its provisioned baseline). No other role edited.",
+ "captured_at": "2026-09-18T23:11:12.816201+00:00",
+ "shared_restricted_admin": {
+  "before_count": 16,
+  "after_count": 16,
+  "drifted": false,
+  "has_onyx_integrations_read": true,
+  "permission_keys": [
+   "fe.account-settings.read.app",
+   "fe.connectivity.*",
+   "fe.secure.*",
+   "onyx.anonymized_data.read",
+   "onyx.config.read",
+   "onyx.config.write",
+   "onyx.credentials.read",
+   "onyx.credentials.write",
+   "onyx.delete",
+   "onyx.extension.config.read",
+   "onyx.extension.event.write",
+   "onyx.integrations.read",
+   "onyx.integrations.write",
+   "onyx.read",
+   "onyx.sessions.read",
+   "onyx.write"
+  ]
+ },
+ "clone_gate_test_role": {
+  "before_count": 15,
+  "after_count": 16,
+  "delta_keys": [
+   "onyx.integrations.read"
+  ],
+  "has_onyx_integrations_read": true,
+  "permission_keys": [
+   "fe.account-settings.read.app",
+   "fe.connectivity.*",
+   "fe.secure.*",
+   "onyx.anonymized_data.read",
+   "onyx.config.read",
+   "onyx.config.write",
+   "onyx.credentials.read",
+   "onyx.credentials.write",
+   "onyx.delete",
+   "onyx.extension.config.read",
+   "onyx.extension.event.write",
+   "onyx.integrations.read",
+   "onyx.integrations.write",
+   "onyx.read",
+   "onyx.sessions.read",
+   "onyx.write"
+  ]
+ },
+ "runtime_editor_user": {
+  "note": "at8 principal \u2014 a NEW user provisioned with ONLY the pre-existing Runtime Editor role; no role definition was modified for at8.",
+  "email": "prdct14941-runtime-editor@onyx-agent-lab.dev",
+  "user_id": "2fb7d5cc-4f05-4849-b2c5-6818d52b6549",
+  "role": "onyx.runtime_editor"
+ }
+}
